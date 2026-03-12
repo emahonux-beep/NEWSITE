@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Erin Mahon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Mono:wght@400;500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#DABBE3"/>
+          <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Caveat, cursive" font-size="18" font-weight="700" fill="#6B2D3E">em</text>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <div class="projects-hero">
+    <p class="sec-label">Portfolio</p>
+    <h1>All Projects</h1>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar" id="proj-filter-bar">
+    <button class="filter-btn selected" onclick="filterProjects('all', this)">All</button>
+    <button class="filter-btn" onclick="filterProjects('healthcare', this)">Healthcare</button>
+    <button class="filter-btn" onclick="filterProjects('government', this)">Government</button>
+    <button class="filter-btn" onclick="filterProjects('devices', this)">Connected Devices</button>
+    <button class="filter-btn" onclick="filterProjects('certification', this)">Certification Work</button>
+  </div>
+
+  <!-- ===== HEALTHCARE ===== -->
+  <div class="project-section" data-group="healthcare">
+    <div class="section-divider">
+      <span class="section-divider-label">Healthcare</span>
+      <div class="section-divider-line"></div>
+    </div>
+    <p class="group-desc-text">Product design work at Cigna / Evernorth (2022 — Present) — member-facing healthcare experiences across prescription management, benefits, and digital health tools.</p>
+
+    <div class="project-grid">
+
+      <!-- Featured: Check Coverage -->
+      <div class="project-card-featured project-card-link" style="grid-column:1/4;" onclick="window.location='check-coverage.html'">
+        <div class="feat-thumb" style="background:linear-gradient(135deg,var(--pink-tint),var(--lav-tint),var(--sage-tint));">
+          <img src="image/check-coverage.png" alt="Check Coverage" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="feat-content">
+          <div class="card-tags" style="margin-bottom:16px;">
+            <span class="tag tag-health">Healthcare</span>
+            <span class="tag tag-health">Express Scripts</span>
+          </div>
+          <h3>Check Coverage</h3>
+          <p>Led the multi-year evolution of Check Coverage — from a compliance-driven transparency tool into a member-first decision-support product helping people confidently compare medication costs and coverage.</p>
+        </div>
+      </div>
+
+      <!-- Cost Optimization -->
+      <div class="project-card project-card-link" onclick="window.location='cost-optimization.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--pink-tint),var(--lav-tint));">
+          <img src="image/cost-optimization.png" alt="Cost Optimization" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-health">Healthcare</span><span class="tag tag-health">Express Scripts</span></div>
+          <h3>Cost Optimization</h3>
+          <p>Multi-year evolution from a legacy savings UI to a flexible decision platform — 320% conversion gain and a 10-point sentiment lift over three phases.</p>
+        </div>
+      </div>
+
+      <!-- Benefits Overview -->
+      <div class="project-card project-card-link" onclick="window.location='benefits-overview.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--lav-tint),var(--pink-tint));">
+          <img src="image/benefits-overview.png" alt="Benefits Overview" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-health">Healthcare</span></div>
+          <h3>Benefits Overview</h3>
+          <p>Simplifying benefits comprehension for new and existing members.</p>
+        </div>
+      </div>
+
+      <!-- Digital ID -->
+      <div class="project-card project-card-link" onclick="window.location='digital-id.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--sage-tint),var(--lav-tint));">
+          <img src="image/digital-id.png" alt="Digital ID" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-health">Healthcare</span><span class="tag tag-health">Express Scripts</span></div>
+          <h3>Digital ID</h3>
+          <p>Redesigned a static SVG card replica into a discoverable, wallet-integrated identity experience — driving significant adoption and becoming one of the most visited areas in the member portal.</p>
+        </div>
+      </div>
+
+      <!-- Pharmacy Locator -->
+      <div class="project-card project-card-link" onclick="window.location='pharmacy-locator.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--pink-tint),var(--sage-tint));">
+          <img src="image/pharmacy-locator.png" alt="Pharmacy Locator" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-health">Healthcare</span></div>
+          <h3>Pharmacy Locator</h3>
+          <p>Helping members find in-network pharmacies based on coverage and location.</p>
+        </div>
+      </div>
+
+      <!-- Open Enrollment -->
+      <div class="project-card project-card-link" onclick="window.location='open-enrollment.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--lav-tint),var(--sage-tint));">
+          <img src="image/open-enrollment.png" alt="Open Enrollment" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-health">Healthcare</span></div>
+          <h3>Open Enrollment</h3>
+          <p>Streamlining the annual benefits selection process for Cigna members.</p>
+        </div>
+      </div>
+
+      <!-- Claims -->
+      <div class="project-card project-card-link" onclick="window.location='claims.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--pink-tint),var(--lav-tint));">
+          <img src="image/claims.png" alt="Claims" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-health">Healthcare</span></div>
+          <h3>Claims</h3>
+          <p>Transparent, easy-to-understand claims status and history.</p>
+        </div>
+      </div>
+
+      <!-- Annual Cost Summary -->
+      <div class="project-card project-card-link" onclick="window.location='annual-cost-summary.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--sage-tint),var(--pink-tint));">
+          <img src="image/annual-cost-summary.png" alt="Annual Cost Summary" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-health">Healthcare</span><span class="tag tag-health">Express Scripts</span></div>
+          <h3>Annual Cost Summary</h3>
+          <p>Designed a receipt-style pharmacy cost breakdown that fulfilled public transparency commitments — translating complex benefit economics into something members can understand and trust.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== GOVERNMENT ===== -->
+  <div class="project-section" data-group="government">
+    <div class="section-divider">
+      <span class="section-divider-label">Government</span>
+      <div class="section-divider-line"></div>
+    </div>
+    <p class="group-desc-text">Civic technology design at Servos (2021 — 2022) — ServiceNow-powered digital transformation for state and county government portals serving millions of citizens.</p>
+
+    <div class="project-grid">
+
+      <!-- SD.GOV -->
+      <div class="project-card project-card-link" onclick="window.location='sd-gov.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--sage-tint),var(--lav-tint));">
+          <img src="image/sd-gov.png" alt="SD.GOV" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-gov">Government</span></div>
+          <h3>SD.GOV</h3>
+          <p>ServiceNow digital transformation for South Dakota citizens — custom UX, intuitive IA, single sign on, and mobile-first case management.</p>
+        </div>
+      </div>
+
+      <!-- Harris County 311 -->
+      <div class="project-card project-card-link" onclick="window.location='harris-county.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--lav-tint),var(--sage-tint));">
+          <img src="image/harris-county.png" alt="Harris County 311" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-gov">Government</span></div>
+          <h3>Harris County 311</h3>
+          <p>Modernizing citizen service request systems for Harris County residents.</p>
+        </div>
+      </div>
+
+      <!-- Educator Certification -->
+      <div class="project-card project-card-link" onclick="window.location='educator-certification.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--pink-tint),var(--sage-tint));">
+          <img src="image/educator-cert.png" alt="Educator Certification" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-gov">Government</span></div>
+          <h3>Educator Certification</h3>
+          <p>Streamlining the educator certification process for state education departments.</p>
+        </div>
+      </div>
+
+      <!-- Content Management -->
+      <div class="project-card project-card-link" onclick="window.location='content-management.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--sage-tint),var(--pink-tint));">
+          <img src="image/content-management.png" alt="Content Management" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-gov">Government</span></div>
+          <h3>Content Management</h3>
+          <p>Internal CMS redesign for state government content administrators.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== CONNECTED DEVICES ===== -->
+  <div class="project-section" data-group="devices">
+    <div class="section-divider">
+      <span class="section-divider-label">Connected Devices</span>
+      <div class="section-divider-line"></div>
+    </div>
+    <p class="group-desc-text">Mobile companion app design at C+A Global (2020 — 2021) — pairing experiences, data visualization, and feature design for consumer IoT hardware products.</p>
+
+    <div class="project-grid">
+
+      <!-- Kodak Smile -->
+      <div class="project-card project-card-link" onclick="window.location='kodak-smile.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--pink-tint),var(--lav-tint));">
+          <img src="image/kodak-smile.png" alt="Kodak Smile" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-device">Connected Devices</span></div>
+          <h3>Kodak Smile</h3>
+          <p>Companion app for the Kodak Smile instant print camera.</p>
+        </div>
+      </div>
+
+      <!-- Logia Weather Station -->
+      <div class="project-card project-card-link" onclick="window.location='logia.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--lav-tint),var(--sage-tint));">
+          <img src="image/logia.png" alt="Logia Weather Station" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-device">Connected Devices</span></div>
+          <h3>Logia Weather Station</h3>
+          <p>Mobile companion app for the Logia personal weather station.</p>
+        </div>
+      </div>
+
+      <!-- Iviation -->
+      <div class="project-card project-card-link" onclick="window.location='iviation.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--sage-tint),var(--pink-tint));">
+          <img src="image/iviation.png" alt="Iviation" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-device">Connected Devices</span></div>
+          <h3>Iviation</h3>
+          <p>Connected device companion for the Iviation personal aircraft system.</p>
+        </div>
+      </div>
+
+      <!-- Lifeprint -->
+      <div class="project-card project-card-link" onclick="window.location='lifeprint.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--pink-tint),var(--sage-tint));">
+          <img src="image/lifeprint.png" alt="Lifeprint" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-device">Connected Devices</span></div>
+          <h3>Lifeprint</h3>
+          <p>AR-powered instant photo printing app for the Lifeprint printer.</p>
+        </div>
+      </div>
+
+      <!-- LiveFine Pill Dispenser -->
+      <div class="project-card project-card-link" onclick="window.location='livefine.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--lav-tint),var(--pink-tint));">
+          <img src="image/livefine.png" alt="LiveFine Pill Dispenser" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-device">Connected Devices</span></div>
+          <h3>LiveFine Pill Dispenser</h3>
+          <p>Smart medication management for seniors and caregivers.</p>
+        </div>
+      </div>
+
+      <!-- Truvitals Thermometer -->
+      <div class="project-card project-card-link" onclick="window.location='truvitals.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--sage-tint),var(--lav-tint));">
+          <img src="image/truvitals.png" alt="Truvitals Thermometer" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-device">Connected Devices</span></div>
+          <h3>Truvitals Thermometer</h3>
+          <p>Connected thermometer with health tracking and family sharing.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== CERTIFICATION WORK ===== -->
+  <div class="project-section" data-group="certification">
+    <div class="section-divider">
+      <span class="section-divider-label">Certification Work</span>
+      <div class="section-divider-line"></div>
+    </div>
+    <p class="group-desc-text">End-to-end UX projects completed during certification at Flatiron School (2019 — 2020) — full design process from research through high-fidelity prototype and usability testing.</p>
+
+    <div class="project-grid">
+
+      <!-- Spotivity -->
+      <div class="project-card project-card-link" onclick="window.location='spotivity.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--lav-tint),var(--pink-tint));">
+          <img src="image/spotivity.png" alt="Spotivity" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-device">Certification</span><span class="tag tag-device">Team of 4</span></div>
+          <h3>Spotivity</h3>
+          <p>Redesigning a youth activity platform to drive re-engagement — without overhauling the existing framework. One CTA change changed everything.</p>
+        </div>
+      </div>
+
+      <!-- Bon Voyage -->
+      <div class="project-card project-card-link" onclick="window.location='bon-voyage.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--pink-tint),var(--lav-tint));">
+          <img src="image/bon-voyage.png" alt="Bon Voyage" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-device">Certification</span><span class="tag tag-device">Solo</span></div>
+          <h3>Bon Voyage</h3>
+          <p>A solo 6-week project designing the travel planning app the market was missing — budget-conscious, itinerary-first, and built around how people actually plan trips.</p>
+        </div>
+      </div>
+
+      <!-- Evento Adesso -->
+      <div class="project-card project-card-link" onclick="window.location='evento-adesso.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--sage-tint),var(--lav-tint));">
+          <img src="image/evento-adesso.png" alt="Evento Adesso" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-device">Certification</span><span class="tag tag-device">Team of 2</span></div>
+          <h3>Evento Adesso</h3>
+          <p>Remote event platform designed to not just replicate — but measure and increase — real-world engagement. Built with a team of 2 over 6 weeks.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Erin Mahon</div>
+        <div class="footer-brand-sub">Product Designer</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>Charleston, SC</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:emahonux@gmail.com" style="color:var(--pink-text);">emahonux@gmail.com</a>
+        <a href="tel:2034820166">(203) 482-0166</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Erin Mahon. All rights reserved.</p>
+      <p>Product Designer · Charleston, SC</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    function filterProjects(category, btn) {
+      document.querySelectorAll('#proj-filter-bar .filter-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      document.querySelectorAll('[data-group]').forEach(group => {
+        group.style.display = (category === 'all' || group.dataset.group === category) ? '' : 'none';
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('vis'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

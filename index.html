@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erin Mahon — Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Mono:wght@400;500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web"><\/script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#DABBE3"/>
+          <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Caveat, cursive" font-size="18" font-weight="700" fill="#6B2D3E">em</text>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Product Designer</p>
+        <h1>Designing <em>clarity</em> in a world full of chaos</h1>
+        <p class="hero-bio">I'm a product designer focused on healthcare, government, and connected devices — turning complex systems into intuitive experiences that actually work for real people.</p>
+        <a href="projects.html" class="btn btn-primary">See all projects →</a>
+      </div>
+      <div class="hero-art reveal">
+        <div class="hero-art-inner">
+          <img src="image/hero-illustration.png" alt="Illustrated portrait of Erin with cats" class="hero-illustration" onerror="this.style.display='none'"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stats-inner reveal">
+      <div class="stat-item">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Post-Secondary Credentials</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">40+</div>
+        <div class="stat-label">Products Shipped</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MY APPROACH -->
+  <section class="section" style="background:var(--lav-tint);">
+    <p class="sec-label">My Approach</p>
+    <div class="approach-cards">
+      <div class="approach-card reveal">
+        <div class="approach-icon" style="background:var(--pink-tint);">
+          <i class="ph ph-magnifying-glass" style="color:var(--pink-text);font-size:1.4rem;"></i>
+        </div>
+        <h3>Research Led</h3>
+        <p>Every design decision starts with understanding real users — their contexts, mental models, and friction points.</p>
+      </div>
+      <div class="approach-card reveal">
+        <div class="approach-icon" style="background:var(--sage-tint);">
+          <i class="ph ph-chart-bar" style="color:var(--sage-text);font-size:1.4rem;"></i>
+        </div>
+        <h3>Data Informed</h3>
+        <p>Quantitative validation ensures designs don't just feel right — they demonstrably improve outcomes.</p>
+      </div>
+      <div class="approach-card reveal">
+        <div class="approach-icon" style="background:var(--lav-tint);">
+          <i class="ph ph-circles-four" style="color:var(--lav-text);font-size:1.4rem;"></i>
+        </div>
+        <h3>Systems Thinking</h3>
+        <p>I design components, patterns, and frameworks that scale — so teams ship faster and experiences stay consistent.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOGNITION -->
+  <section class="recognition">
+    <p class="sec-label">Recognition</p>
+    <div class="rec-grid">
+      <div class="rec-text reveal">
+        <h2>2025 Cigna CEO Standout Award</h2>
+        <p>Recognized for exceptional cross-functional impact and delivering design work that meaningfully improved member experiences at scale.</p>
+        <p>This award recognizes employees whose contributions directly advance Cigna's mission of improving health, well-being, and peace of mind.</p>
+      </div>
+      <div class="rec-photo-grid reveal">
+        <div class="rec-photo-large">
+          <img src="image/ceo-standout-main.jpg" alt="CEO Standout Awards ceremony stage" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="rec-photo-wide">
+          <img src="image/ceo-standout-2.jpg" alt="Award photo" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="rec-photo-sq">
+          <img src="image/ceo-standout-3.jpg" alt="Award photo" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="rec-photo-sq">
+          <img src="image/ceo-standout-4.jpg" alt="Award photo" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIG 2025 -->
+  <section class="config-section">
+    <div class="grid-2">
+      <div class="config-photo-grid reveal">
+        <div class="collage-grid collage-5" style="width:100%;">
+          <div class="collage-wide">
+            <img src="image/config-group.jpg" alt="Erin and colleagues at Config 2025" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+          </div>
+          <div class="collage-sq">
+            <img src="image/config-stage.jpg" alt="Config 2025 stage" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+          </div>
+          <div class="collage-sq">
+            <img src="image/config-art.jpg" alt="Config 2025 art installation" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+          </div>
+          <div class="collage-sq">
+            <img src="image/config-swag.jpg" alt="Config 2025 swag" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+          </div>
+          <div class="collage-sq">
+            <img src="image/config-keynote.jpg" alt="Config 2025 keynote" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+          </div>
+        </div>
+      </div>
+      <div class="config-text reveal">
+        <p class="eyebrow">Events</p>
+        <h2>Config 2025</h2>
+        <p>Attended Figma's Config 2025 — connecting with the design community, exploring the future of design tooling, and bringing back insights to evolve our team's workflow.</p>
+        <p>From AI-powered design systems to next-gen prototyping, it was a week of inspiration and intentional learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Erin Mahon</div>
+        <div class="footer-brand-sub">Product Designer</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>Charleston, SC</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:emahonux@gmail.com" style="color:var(--pink-text);">emahonux@gmail.com</a>
+        <a href="tel:2034820166">(203) 482-0166</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Erin Mahon. All rights reserved.</p>
+      <p>Product Designer · Charleston, SC</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('vis'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  <\/script>
+
+</body>
+</html>

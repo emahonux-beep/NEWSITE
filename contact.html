@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Erin Mahon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Mono:wght@400;500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Netlify hidden form for SPA detection -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="first-name" />
+    <input type="text" name="last-name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <textarea name="message"></textarea>
+  </form>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#DABBE3"/>
+          <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Caveat, cursive" font-size="18" font-weight="700" fill="#6B2D3E">em</text>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== CONTACT HERO ===================== -->
+  <section class="contact-section">
+    <div class="contact-grid">
+
+      <!-- LEFT: form content -->
+      <div class="contact-left">
+        <p class="eyebrow">Get in Touch</p>
+        <h1>Call Me, Beep Me, If You Want to Reach Me</h1>
+        <p class="contact-sub">Whether you have a project in mind, want to collaborate, or just want to connect — I'd love to hear from you. My inbox is always open.</p>
+
+        <div class="contact-links">
+          <a href="mailto:emahonux@gmail.com" class="contact-link-row">
+            <span class="contact-link-icon" style="background:var(--pink-tint);">
+              <i class="ph ph-envelope-simple" style="color:var(--pink-text);"></i>
+            </span>
+            emahonux@gmail.com
+          </a>
+          <a href="tel:2034820166" class="contact-link-row">
+            <span class="contact-link-icon" style="background:var(--pink-tint);">
+              <i class="ph ph-phone" style="color:var(--pink-text);"></i>
+            </span>
+            (203) 482-0166
+          </a>
+        </div>
+
+        <!-- FORM STATE -->
+        <div id="contact-form-wrap">
+          <form
+            id="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none;"><input name="bot-field" /></p>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="first-name">First Name</label>
+                <input class="form-input" type="text" id="first-name" name="first-name" placeholder="Erin" required />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="last-name">Last Name</label>
+                <input class="form-input" type="text" id="last-name" name="last-name" placeholder="Mahon" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="phone">Phone</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="(000) 000-0000" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-input form-textarea" id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">Send message →</button>
+          </form>
+        </div>
+
+        <!-- SUCCESS STATE (hidden by default) -->
+        <div id="contact-success" style="display:none;">
+          <div class="contact-success-box">
+            <i class="ph ph-check-circle" style="font-size:1.8rem;color:var(--pink-text);"></i>
+            <p class="success-heading">Message sent!</p>
+            <p class="success-sub">Thanks for reaching out — I'll get back to you soon.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: illustration -->
+      <div class="contact-art">
+        <img
+          src="image/contact-illustration.png"
+          alt="Illustrated portrait of Erin on the phone"
+          style="width:100%;height:100%;object-fit:contain;object-position:center bottom;"
+          onerror="this.style.display='none'"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Erin Mahon</div>
+        <div class="footer-brand-sub">Product Designer</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>Charleston, SC</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:emahonux@gmail.com" style="color:var(--pink-text);">emahonux@gmail.com</a>
+        <a href="tel:2034820166">(203) 482-0166</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Erin Mahon. All rights reserved.</p>
+      <p>Product Designer · Charleston, SC</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    // Netlify form submit via fetch → show success state
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(data).toString()
+        });
+        document.getElementById('contact-form-wrap').style.display = 'none';
+        document.getElementById('contact-success').style.display = 'block';
+      } catch (err) {
+        alert('Something went wrong. Please email me directly at emahonux@gmail.com');
+      }
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('vis'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

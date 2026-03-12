@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Erin Mahon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Mono:wght@400;500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#DABBE3"/>
+          <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Caveat, cursive" font-size="18" font-weight="700" fill="#6B2D3E">em</text>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="about-hero">
+    <div class="grid-2">
+      <div class="reveal">
+        <p class="eyebrow">Get to Know Me</p>
+        <h1>About me</h1>
+        <p>I'm Erin — a Product Designer based in Charleston, SC with a background that's equal parts psychology, information science, and genuine curiosity about how people make sense of complex systems.</p>
+        <p>I studied Psychology and Information Science at USC, then earned my UX Design &amp; Research certification from Flatiron School and a UI Design certification from Shift Nudge in 2025. That intersection of human behavior and information architecture is where I live — it's what makes me obsessive about clarity, hierarchy, and flow.</p>
+        <p>When I'm not designing, I'm usually being supervised by my three cats: Gimli, Nala, and Stella. They have strong opinions about my work.</p>
+      </div>
+      <div class="about-art reveal">
+        <img
+          src="image/about-illustration.png"
+          alt="Illustrated portrait of Erin at a sticky note board"
+          style="width:100%;height:100%;object-fit:contain;object-position:center bottom;"
+          onerror="this.style.display='none'"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PHILOSOPHY ===================== -->
+  <section class="philosophy">
+    <div class="grid-2" style="align-items:start;gap:80px;">
+      <div class="reveal">
+        <p class="phil-quote">"I believe great design happens where <em>clarity</em>, collaboration, and curiosity meet."</p>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Design Philosophy</p>
+        <p class="phil-sub">Design isn't just about making things look good — it's about making things work better for people. My philosophy is rooted in the belief that the best solutions emerge from rigorous research, honest collaboration, and a relentless commitment to simplicity on the other side of complexity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRINCIPLES ACCORDION ===================== -->
+  <section class="accordion-section">
+    <h2 class="acc-title">Six principles I design by</h2>
+
+    <div class="acc-item open">
+      <button class="acc-trigger" onclick="toggleAcc(this)">
+        <span class="acc-trigger-text">Clarity through structure</span>
+        <span class="acc-icon">
+          <span class="acc-icon-plus">+</span>
+          <span class="acc-icon-minus">−</span>
+        </span>
+      </button>
+      <div class="acc-body">
+        <div class="acc-body-inner">Information hierarchy isn't a visual exercise — it's a cognitive one. When structure is right, users don't have to think. They just find. I obsess over how content is organized so that every screen tells a coherent story from top to bottom.</div>
+      </div>
+    </div>
+
+    <div class="acc-item open">
+      <button class="acc-trigger" onclick="toggleAcc(this)">
+        <span class="acc-trigger-text">Design as an iterative process</span>
+        <span class="acc-icon">
+          <span class="acc-icon-plus">+</span>
+          <span class="acc-icon-minus">−</span>
+        </span>
+      </button>
+      <div class="acc-body">
+        <div class="acc-body-inner">The first version is a hypothesis. I treat every design artifact as a test — from rough sketches to polished prototypes — staying attached to outcomes, not outputs. Iteration isn't a sign of failure; it's the process working correctly.</div>
+      </div>
+    </div>
+
+    <div class="acc-item open">
+      <button class="acc-trigger" onclick="toggleAcc(this)">
+        <span class="acc-trigger-text">Data is my superpower</span>
+        <span class="acc-icon">
+          <span class="acc-icon-plus">+</span>
+          <span class="acc-icon-minus">−</span>
+        </span>
+      </button>
+      <div class="acc-body">
+        <div class="acc-body-inner">Qualitative research tells me what and why. Quantitative data tells me how much. Together, they give me the full picture needed to make confident design decisions — and to prove the impact of those decisions to stakeholders.</div>
+      </div>
+    </div>
+
+    <div class="acc-item open">
+      <button class="acc-trigger" onclick="toggleAcc(this)">
+        <span class="acc-trigger-text">Organized chaos → Intentional clarity</span>
+        <span class="acc-icon">
+          <span class="acc-icon-plus">+</span>
+          <span class="acc-icon-minus">−</span>
+        </span>
+      </button>
+      <div class="acc-body">
+        <div class="acc-body-inner">I thrive at the intersection of complexity and elegance. Healthcare systems, government portals, connected device ecosystems — these are inherently messy domains. My job is to find the threads of logic inside the chaos and surface them as clear, trustworthy experiences.</div>
+      </div>
+    </div>
+
+    <div class="acc-item open">
+      <button class="acc-trigger" onclick="toggleAcc(this)">
+        <span class="acc-trigger-text">Leadership &amp; mentorship</span>
+        <span class="acc-icon">
+          <span class="acc-icon-plus">+</span>
+          <span class="acc-icon-minus">−</span>
+        </span>
+      </button>
+      <div class="acc-body">
+        <div class="acc-body-inner">Design gets better when designers get better. I invest in mentorship, design critique culture, and building frameworks that make the whole team stronger — not just my own projects.</div>
+      </div>
+    </div>
+
+    <div class="acc-item open">
+      <button class="acc-trigger" onclick="toggleAcc(this)">
+        <span class="acc-trigger-text">Results and impact</span>
+        <span class="acc-icon">
+          <span class="acc-icon-plus">+</span>
+          <span class="acc-icon-minus">−</span>
+        </span>
+      </button>
+      <div class="acc-body">
+        <div class="acc-body-inner">Good design should be measurable. I track outcomes — conversion rates, task success rates, sentiment scores, support call deflection — because impact is what separates design that looks great from design that works.</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===================== PROCESS CTA ===================== -->
+  <section class="process-cta-section">
+    <div class="process-cta-inner">
+      <div class="process-cta-text reveal">
+        <p class="eyebrow">Design Process</p>
+        <h2>Curious about how I work?</h2>
+        <p>I follow a structured five-phase process — from fuzzy discovery all the way through to tested, polished delivery. I also run workshops, use research frameworks, and bring the team along for every step.</p>
+        <a href="process.html" class="btn btn-outline" style="margin-top:28px;">Explore my process →</a>
+      </div>
+      <div class="process-cta-phases reveal">
+        <div class="process-cta-phase">
+          <span class="pcp-num">01</span>
+          <span class="pcp-label">Discover &amp; Understand</span>
+        </div>
+        <div class="process-cta-phase">
+          <span class="pcp-num">02</span>
+          <span class="pcp-label">Synthesis &amp; Design</span>
+        </div>
+        <div class="process-cta-phase">
+          <span class="pcp-num">03</span>
+          <span class="pcp-label">Concept Design</span>
+        </div>
+        <div class="process-cta-phase">
+          <span class="pcp-num">04</span>
+          <span class="pcp-label">Prototype &amp; Build</span>
+        </div>
+        <div class="process-cta-phase" style="border-bottom:none;">
+          <span class="pcp-num">05</span>
+          <span class="pcp-label">Test &amp; Iterate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE + EDUCATION ===================== -->
+  <section class="experience-section">
+    <div class="grid-2" style="align-items:start;gap:80px;">
+
+      <div class="reveal">
+        <h3>Experience</h3>
+        <div class="exp-item">
+          <div class="exp-role">Senior Product Designer</div>
+          <div class="exp-company">Cigna / Evernorth</div>
+          <div class="exp-date">2022 — Present</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-role">Lead Experience Designer</div>
+          <div class="exp-company">Servos</div>
+          <div class="exp-date">2021 — 2022</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-role">UX Researcher</div>
+          <div class="exp-company">C+A Global</div>
+          <div class="exp-date">2020 — 2021</div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h3>Education</h3>
+        <div class="exp-item">
+          <div class="exp-role">B.A. Psychology &amp; Information Science</div>
+          <div class="exp-company">University of South Carolina</div>
+          <div class="exp-date">2019</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-role">UX Design &amp; Research Certificate</div>
+          <div class="exp-company">Flatiron School</div>
+          <div class="exp-date">2020</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-role">UI Design Certificate</div>
+          <div class="exp-company">Shift Nudge</div>
+          <div class="exp-date">2025</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills-section">
+    <p class="sec-label">Capabilities</p>
+    <h2 style="font-family:'Caveat',cursive;font-size:clamp(2rem,3.5vw,3rem);font-weight:700;margin-bottom:40px;">Skills &amp; tools</h2>
+    <div class="grid-3">
+
+      <div class="skill-card skill-card-pink reveal">
+        <div class="skill-card-header">
+          <div class="skill-card-icon">
+            <i class="ph ph-pen-nib" style="font-size:1.2rem;"></i>
+          </div>
+          <h3>Design</h3>
+        </div>
+        <div class="skill-card-body">
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">Prototyping</span>
+          <span class="skill-pill">Design Systems</span>
+          <span class="skill-pill">Component Architecture</span>
+          <span class="skill-pill">Visual Design</span>
+          <span class="skill-pill">Motion Design</span>
+          <span class="skill-pill">Accessibility</span>
+          <span class="skill-pill">Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="skill-card skill-card-sage reveal">
+        <div class="skill-card-header">
+          <div class="skill-card-icon">
+            <i class="ph ph-magnifying-glass" style="font-size:1.2rem;"></i>
+          </div>
+          <h3>Research</h3>
+        </div>
+        <div class="skill-card-body">
+          <span class="skill-pill sp-sage">User Interviews</span>
+          <span class="skill-pill sp-sage">Usability Testing</span>
+          <span class="skill-pill sp-sage">Competitive Analysis</span>
+          <span class="skill-pill sp-sage">Journey Mapping</span>
+          <span class="skill-pill sp-sage">Persona Development</span>
+          <span class="skill-pill sp-sage">A/B Testing</span>
+          <span class="skill-pill sp-sage">Analytics</span>
+        </div>
+      </div>
+
+      <div class="skill-card skill-card-lav reveal">
+        <div class="skill-card-header">
+          <div class="skill-card-icon">
+            <i class="ph ph-users" style="font-size:1.2rem;"></i>
+          </div>
+          <h3>Collaboration</h3>
+        </div>
+        <div class="skill-card-body">
+          <span class="skill-pill sp-lav">Cross-functional Teams</span>
+          <span class="skill-pill sp-lav">Stakeholder Alignment</span>
+          <span class="skill-pill sp-lav">Agile / Scrum</span>
+          <span class="skill-pill sp-lav">Design Critiques</span>
+          <span class="skill-pill sp-lav">Mentorship</span>
+          <span class="skill-pill sp-lav">Design Strategy</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== SELECTED WORK ===================== -->
+  <section class="config-section" style="background:var(--lav-tint);">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;">
+      <div>
+        <p class="sec-label">Selected Work</p>
+        <h2 style="font-family:'Caveat',cursive;font-size:clamp(2rem,3.5vw,3rem);font-weight:700;">A few projects</h2>
+      </div>
+      <a href="projects.html" style="font-family:'DM Mono',monospace;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--pink-text);text-decoration:none;">View all →</a>
+    </div>
+    <div class="grid-3">
+
+      <div class="project-card project-card-link reveal" onclick="window.location='projects.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--pink-tint),var(--lav-tint),var(--sage-tint));display:flex;align-items:center;justify-content:center;">
+          <img src="image/check-coverage.png" alt="Check Coverage" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-health">Healthcare</span><span class="tag tag-health">Express Scripts</span></div>
+          <h3>Check Coverage</h3>
+          <p>Led the multi-year evolution of Check Coverage — from compliance tool to member-first decision-support product.</p>
+        </div>
+      </div>
+
+      <div class="project-card project-card-link reveal" onclick="window.location='projects.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--sage-tint),var(--lav-tint));display:flex;align-items:center;justify-content:center;">
+          <img src="image/sd-gov.png" alt="SD.GOV" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"/>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-gov">Government</span><span class="tag tag-gov">ServiceNow</span></div>
+          <h3>SD.GOV</h3>
+          <p>Unified 200+ state services under one login — 89% first-click accuracy from day one.</p>
+        </div>
+      </div>
+
+      <div class="project-card project-card-link reveal" onclick="window.location='projects.html'">
+        <div class="card-thumb" style="background:linear-gradient(135deg,var(--lav-tint),var(--pink-tint));display:flex;align-items:center;justify-content:center;">
+          <span style="font-family:'Caveat',cursive;font-size:1.1rem;color:var(--slate);background:rgba(255,255,255,0.85);padding:8px 20px;border-radius:999px;">Image Coming soon</span>
+        </div>
+        <div class="card-content">
+          <div class="card-tags"><span class="tag tag-device">Certification</span><span class="tag tag-device">Flatiron</span></div>
+          <h3>Spotivity</h3>
+          <p>Re-engaged teen users by reducing commitment friction — one CTA change drove measurable results.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Erin Mahon</div>
+        <div class="footer-brand-sub">Product Designer</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>Charleston, SC</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:emahonux@gmail.com" style="color:var(--pink-text);">emahonux@gmail.com</a>
+        <a href="tel:2034820166">(203) 482-0166</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Erin Mahon. All rights reserved.</p>
+      <p>Product Designer · Charleston, SC</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    // Accordion
+    function toggleAcc(btn) {
+      const item = btn.closest('.acc-item');
+      item.classList.toggle('open');
+    }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('vis'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

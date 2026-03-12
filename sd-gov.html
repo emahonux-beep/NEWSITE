@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SD.GOV — Erin Mahon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Mono:wght@400;500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#DABBE3"/>
+          <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Caveat, cursive" font-size="18" font-weight="700" fill="#6B2D3E">em</text>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="case-study">
+
+    <div class="cs-back">
+      <a href="projects.html">← Back to projects</a>
+    </div>
+
+    <!-- Header -->
+    <div class="cs-header">
+      <h1>SD.GOV</h1>
+      <div class="card-tags" style="margin-bottom:24px;">
+        <span class="tag tag-gov">Government</span>
+        <span class="tag tag-gov">ServiceNow</span>
+      </div>
+      <p class="cs-intro">South Dakota needed to modernize how citizens interacted with state government services. We delivered a ServiceNow-powered platform with custom UX, intuitive information architecture, and a mobile-first case management system.</p>
+    </div>
+
+    <!-- Meta cards -->
+    <div class="cs-meta-grid">
+      <div class="cs-meta-card">
+        <p class="cs-meta-label">Challenge</p>
+        <p>Citizens were navigating a fragmented digital ecosystem of legacy government portals — each with different logins, navigation patterns, and visual languages. Completing basic tasks required significant effort.</p>
+      </div>
+      <div class="cs-meta-card">
+        <p class="cs-meta-label">Objectives</p>
+        <p>Consolidate disparate government services into a unified, accessible digital experience. Implement single sign-on across all state services. Build a scalable design system for future service additions.</p>
+      </div>
+      <div class="cs-meta-card">
+        <p class="cs-meta-label">Role &amp; Tools</p>
+        <p>Lead Experience Designer at Servos — responsible for UX strategy, IA, interaction design, and design system development. Collaborated with ServiceNow developers, state stakeholders, and an accessibility consultant.</p>
+      </div>
+    </div>
+
+    <!-- ===== PLATFORM HIGHLIGHTS ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Platform Highlights</p>
+      <div class="cs-section-rule"></div>
+      <h2>Six pillars of the redesign</h2>
+      <ul class="cs-list">
+        <li><strong>Custom UX</strong> — Purpose-built visual design system on top of ServiceNow, giving SD.GOV a distinct, trustworthy identity</li>
+        <li><strong>Intuitive IA</strong> — Reorganized 200+ services into a logical taxonomy derived from citizen mental models, not government org charts</li>
+        <li><strong>Single Sign On</strong> — Citizens create one account and access all state services without re-authenticating</li>
+        <li><strong>Global Search</strong> — Intelligent search surfaces relevant services, forms, and information from a single query</li>
+        <li><strong>Mobile Friendly Interface</strong> — Designed mobile-first with progressive enhancement for desktop</li>
+        <li><strong>Case Management</strong> — Citizens can track the status of any submitted request or application in real time</li>
+      </ul>
+    </div>
+
+    <!-- Callout -->
+    <div class="cs-callout">
+      <p>Citizens shouldn't need to understand how government is organized to access government services.</p>
+    </div>
+
+    <!-- ===== RESEARCH ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Research</p>
+      <div class="cs-section-rule"></div>
+      <h2>Card sorting &amp; tree testing</h2>
+      <p>We conducted card sorting sessions with 32 South Dakota residents across 4 demographic groups. The results revealed that citizens organize government services around life events — not agency names. This became the backbone of the new information architecture.</p>
+      <p>Tree testing validated the final taxonomy with an 89% first-click accuracy rate before any visual design was completed.</p>
+    </div>
+
+    <!-- ===== DATA / CHART ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Data</p>
+      <div class="cs-section-rule"></div>
+      <h2>Tree test validation</h2>
+      <p>Tree testing validated the final taxonomy with 32 South Dakota residents across 4 demographic groups.</p>
+
+      <div class="cs-chart-card">
+        <p class="cs-meta-label" style="margin-bottom:4px;">First-Click Accuracy</p>
+        <p style="font-family:'Jost',sans-serif;font-size:0.95rem;font-weight:600;margin-bottom:24px;">Final IA validated with 89% first-click accuracy before any visual design was completed</p>
+        <canvas id="treeTestChart" height="120"></canvas>
+      </div>
+    </div>
+
+    <!-- ===== OUTCOMES ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Outcomes</p>
+      <div class="cs-section-rule"></div>
+      <h2>A platform that works for everyone</h2>
+      <div class="cs-stats-grid">
+        <div class="cs-stat-card">
+          <div class="cs-stat-num">89%</div>
+          <div class="cs-stat-label">First-Click Accuracy</div>
+        </div>
+        <div class="cs-stat-card">
+          <div class="cs-stat-num">200+</div>
+          <div class="cs-stat-label">Services Consolidated</div>
+        </div>
+        <div class="cs-stat-card">
+          <div class="cs-stat-num">1</div>
+          <div class="cs-stat-label">Login for All Services</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== NEXT PROJECT ===== -->
+  <div class="cs-next-project">
+    <div>
+      <p class="cs-next-label">Next Project</p>
+      <p class="cs-next-title">Bon Voyage →</p>
+    </div>
+    <a href="bon-voyage.html" class="btn btn-outline">View case study</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Erin Mahon</div>
+        <div class="footer-brand-sub">Product Designer</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>Charleston, SC</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:emahonux@gmail.com" style="color:var(--pink-text);">emahonux@gmail.com</a>
+        <a href="tel:2034820166">(203) 482-0166</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Erin Mahon. All rights reserved.</p>
+      <p>Product Designer · Charleston, SC</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    // Chart.js — Tree Test Bar Chart
+    const ctx = document.getElementById('treeTestChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Target threshold', 'Achieved'],
+        datasets: [{
+          data: [75, 89],
+          backgroundColor: ['#C1CE88', '#4A5E2A'],
+          borderRadius: 4,
+          barThickness: 60,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: ctx => ctx.parsed.y + '%'
+            }
+          }
+        },
+        scales: {
+          y: {
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 10,
+              callback: val => val,
+              font: { family: 'DM Mono', size: 11 },
+              color: '#3F4051'
+            },
+            grid: { color: 'rgba(63,64,81,0.08)' },
+            border: { display: false }
+          },
+          x: {
+            ticks: {
+              font: { family: 'DM Mono', size: 11 },
+              color: '#3F4051'
+            },
+            grid: { display: false },
+            border: { display: false }
+          }
+        }
+      }
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('vis'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

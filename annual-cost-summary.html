@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annual Cost Summary — Erin Mahon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Mono:wght@400;500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#DABBE3"/>
+          <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Caveat, cursive" font-size="18" font-weight="700" fill="#6B2D3E">em</text>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="case-study">
+
+    <div class="cs-back">
+      <a href="projects.html">← Back to projects</a>
+    </div>
+
+    <!-- Header -->
+    <div class="cs-header">
+      <h1>Annual Cost Summary</h1>
+      <div class="card-tags" style="margin-bottom:24px;">
+        <span class="tag tag-health">Healthcare</span>
+        <span class="tag tag-health">Express Scripts</span>
+      </div>
+      <p class="cs-intro">Following public commitments to pharmacy benefit transparency, we designed and launched an Annual Cost Summary — a member-facing experience that translates complex pharmacy economics into something members can understand, trust, and act on. What began as fulfilling a promise became a scalable infrastructure for ongoing cost transparency.</p>
+    </div>
+
+    <!-- Meta cards -->
+    <div class="cs-meta-grid">
+      <div class="cs-meta-card">
+        <p class="cs-meta-label">Challenge</p>
+        <p>Members saw only what they paid and what their plan covered. Manufacturer negotiations, plan-level discounts, and total contributions were invisible. Once a plan year ended, that information became inaccessible entirely. Cost summaries felt abstract, members confused them with tax documents, and there was no structured way to see the full picture.</p>
+      </div>
+      <div class="cs-meta-card">
+        <p class="cs-meta-label">Objectives</p>
+        <p>Deliver transparent plan-year cost reporting aligned to public commitments. Increase member comprehension of pharmacy pricing mechanics. Reduce confusion between tax documentation and benefit summaries. Build a scalable foundation for future real-time accumulation.</p>
+      </div>
+      <div class="cs-meta-card">
+        <p class="cs-meta-label">Role &amp; Tools</p>
+        <p>UX Lead — research synthesis, experience strategy, information architecture, interaction design across responsive web. Partnered with Digital Communications on entry point strategy and campaign alignment.</p>
+      </div>
+    </div>
+
+    <!-- ===== BUSINESS CONTEXT ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Business Context</p>
+      <div class="cs-section-rule"></div>
+      <h2>A public commitment that needed a product</h2>
+      <p>When Evernorth publicly announced a new pharmacy benefit model focused on simplicity and clarity — committing to transparent communication about negotiated manufacturer pricing and plan-level cost dynamics — that announcement created a market expectation: members must be able to see and understand how their prescription costs are structured.</p>
+      <p>The Annual Cost Summary became the digital product that fulfilled that promise.</p>
+    </div>
+
+    <!-- ===== THE PROBLEM ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">The Problem</p>
+      <div class="cs-section-rule"></div>
+      <h2>What members could see — and what they couldn't</h2>
+      <p>Members typically saw three things: what they paid at the pharmacy counter, what their plan covered, and a high-level Explanation of Benefits. What remained invisible:</p>
+      <ul class="cs-list">
+        <li>Manufacturer negotiations and discounts applied at the plan level</li>
+        <li>Additional administrative costs and total plan contribution</li>
+        <li>Historical cost data once the plan year ended</li>
+      </ul>
+      <p>Beyond access, comprehension was a challenge too. Cost summaries felt abstract, difficult to interpret, and members frequently confused them with tax documents — a distinction that carries real consequences.</p>
+    </div>
+
+    <!-- ===== RESEARCH ===== -->
+    <div class="cs-section cs-section-tinted">
+      <p class="cs-section-label">Research</p>
+      <div class="cs-section-rule"></div>
+      <h2>What members told us</h2>
+      <div class="cs-findings-grid">
+        <div class="cs-finding-card">
+          <p class="cs-finding-label">Insight 01</p>
+          <h3>They want it to feel like a receipt</h3>
+          <p>Participants processed costs best when information was structured like a transaction — line items, totals, clear explanations. The mental model was commerce, not benefits.</p>
+        </div>
+        <div class="cs-finding-card">
+          <p class="cs-finding-label">Insight 02</p>
+          <h3>Visual aids reduce cognitive load</h3>
+          <p>Members preferred aggregated totals paired with a visual representation. Seeing the split between their cost and the plan's cost immediately reduced confusion.</p>
+        </div>
+        <div class="cs-finding-card">
+          <p class="cs-finding-label">Insight 03</p>
+          <h3>Real-time accumulation is expected</h3>
+          <p>"Why do I have to wait until the end of the year to see this?" — the most consistent piece of feedback. The product was architected with real-time accumulation in mind for future iterations.</p>
+        </div>
+        <div class="cs-finding-card">
+          <p class="cs-finding-label">Insight 04</p>
+          <h3>Household context matters</h3>
+          <p>Members want to toggle between dependents and see individual annual reports within the same experience — especially important for caregivers managing multiple prescriptions.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Callout -->
+    <div class="cs-callout">
+      <p>Members don't think about pharmacy benefits. They think about what they paid, what they saved, and whether they can trust the number.</p>
+    </div>
+
+    <!-- ===== DESIGN ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Design</p>
+      <div class="cs-section-rule"></div>
+      <h2>Five components that made it work</h2>
+
+      <p><strong>1. Receipt-style cost breakdown</strong><br/>
+      A structured layout showing negotiated price reductions with manufacturers, plan-level discounts applied, additional plan-incurred costs, total paid by the plan, and total paid by the member. Each field includes plain-language descriptions — not benefit jargon.</p>
+
+      <p><strong>2. Donut chart visualization</strong><br/>
+      Paired alongside the breakdown, a chart illustrating the proportional cost split between member contribution, plan contribution, and discounts and negotiated savings. This removes friction when scanning total impact and makes the invisible visible.</p>
+
+      <p><strong>3. Plan balance contributions</strong><br/>
+      A summary of how much the member contributed toward deductibles, out-of-pocket maximums, and other plan balances. Historically this information disappears after the plan year ends — this release preserves that visibility.</p>
+
+      <p><strong>4. Member toggle</strong><br/>
+      Users can switch between members covered under the same plan to view individual annual summaries. Designed specifically to support household decision-making and caregiver workflows.</p>
+
+      <p><strong>5. Contextual FAQ</strong><br/>
+      A robust FAQ section built directly from research findings — addressing how negotiated pricing works, why totals differ from tax reports, how this differs from the Explanation of Benefits, and what counts toward balance tracking.</p>
+    </div>
+
+    <!-- ===== ENTRY POINT ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Entry Point</p>
+      <div class="cs-section-rule"></div>
+      <h2>Where to surface it was as important as what it showed</h2>
+      <p>One of the most debated aspects of this product was placement. After extensive cross-functional alignment, we chose the <strong>Claims Experience</strong> as the primary entry point.</p>
+      <p>The reasoning: members already visit claims to review prescription history, the cost-review mindset is already activated in that journey, and it aligns contextually with spending behavior. We also partnered closely with the Digital Communications team to ensure campaign messaging aligned with the experience, communication links drove to the correct contextual view, and the end-to-end journey felt cohesive.</p>
+    </div>
+
+    <!-- ===== EDGE CASES ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Edge Cases</p>
+      <div class="cs-section-rule"></div>
+      <h2>The complexity underneath the surface</h2>
+      <p>Not all plans run on a January 1 to December 31 calendar. Supporting off-cycle plan years, varying eligibility windows, and multiple entry points based on plan timing required dynamic content states and conditional messaging — ensuring clarity regardless of when a member's coverage period fell.</p>
+      <p>We also had to clearly differentiate the Annual Cost Summary (informational and benefit-focused) from official tax documents (formal documentation for accountants). This distinction was reinforced through copy, FAQs, and contextual cues throughout the experience.</p>
+    </div>
+
+    <!-- ===== OUTCOMES ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Outcomes</p>
+      <div class="cs-section-rule"></div>
+      <h2>A promise delivered</h2>
+      <div class="cs-stats-grid">
+        <div class="cs-stat-card">
+          <div class="cs-stat-num" style="display:flex;align-items:center;justify-content:center;gap:6px;">
+            <i class="ph ph-check" style="font-size:2rem;"></i>
+          </div>
+          <div class="cs-stat-label">Public Transparency Commitments Fulfilled</div>
+        </div>
+        <div class="cs-stat-card">
+          <div class="cs-stat-num">FAQ</div>
+          <div class="cs-stat-label">Comprehension Layer Built from Real Member Questions</div>
+        </div>
+        <div class="cs-stat-card">
+          <div class="cs-stat-num">Scalable</div>
+          <div class="cs-stat-label">Infrastructure Ready for Real-Time Accumulation</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== WHAT'S NEXT ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">What's Next</p>
+      <div class="cs-section-rule"></div>
+      <h2>From year-end artifact to ongoing tool</h2>
+      <p>The next evolution is real-time accumulation — live updating cost summaries, ongoing savings visualization, and expanded educational modules. This transforms the Annual Cost Summary from a static year-end report into a continuous transparency tool that members can reference throughout their plan year.</p>
+    </div>
+
+    <!-- ===== REFLECTION ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Reflection</p>
+      <div class="cs-section-rule"></div>
+      <h2>Translating a promise into a product</h2>
+      <p>This project balanced regulatory and public commitments, complex pricing mechanics, behavioral psychology, multi-entry digital journeys, and cross-functional alignment across communications, legal, and product.</p>
+      <p>The result is a product that translates a traditionally opaque system into something members can actually understand — and more importantly, something they can trust.</p>
+    </div>
+
+  </main>
+
+  <!-- ===== NEXT PROJECT ===== -->
+  <div class="cs-next-project">
+    <div>
+      <p class="cs-next-label">Next Project</p>
+      <p class="cs-next-title">Digital ID →</p>
+    </div>
+    <a href="digital-id.html" class="btn btn-outline">View case study</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Erin Mahon</div>
+        <div class="footer-brand-sub">Product Designer</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>Charleston, SC</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:emahonux@gmail.com" style="color:var(--pink-text);">emahonux@gmail.com</a>
+        <a href="tel:2034820166">(203) 482-0166</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Erin Mahon. All rights reserved.</p>
+      <p>Product Designer · Charleston, SC</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('vis'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital ID — Erin Mahon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Mono:wght@400;500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="18" fill="#DABBE3"/>
+          <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Caveat, cursive" font-size="18" font-weight="700" fill="#6B2D3E">em</text>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="case-study">
+
+    <div class="cs-back">
+      <a href="projects.html">← Back to projects</a>
+    </div>
+
+    <!-- Header -->
+    <div class="cs-header">
+      <h1>Digital ID</h1>
+      <div class="card-tags" style="margin-bottom:24px;">
+        <span class="tag tag-health">Healthcare</span>
+        <span class="tag tag-health">Express Scripts</span>
+      </div>
+      <p class="cs-intro">In 2022, our organization launched digital ID cards to reduce print and mail costs. Adoption was low and engagement minimal. I led the UX strategy and redesign across responsive and native platforms — transforming a static SVG replica into a discoverable, functional, wallet-integrated identity experience that became one of the most visited areas in the member portal.</p>
+    </div>
+
+    <!-- Meta cards -->
+    <div class="cs-meta-grid">
+      <div class="cs-meta-card">
+        <p class="cs-meta-label">Challenge</p>
+        <p>The digital ID card was rendered as an SVG template with member data injected into it. Members could toggle between front and back — and that was the entire experience. No structured metadata, no copy functionality, no wallet integration, no clear navigation entry point. Low traffic and minimal engagement confirmed the core problem: members simply were not encountering the feature.</p>
+      </div>
+      <div class="cs-meta-card">
+        <p class="cs-meta-label">Objectives</p>
+        <p>Increase digital adoption to reduce operational costs. Redesign for real-world use cases rather than digital replication of a physical artifact. Establish a scalable identity foundation that could be leveraged across the organization.</p>
+      </div>
+      <div class="cs-meta-card">
+        <p class="cs-meta-label">Role &amp; Tools</p>
+        <p>UX Strategy Lead — experience audits, competitive research, analytics analysis, use case mapping, interaction design across responsive web and native platforms. Paired product redesign with adoption strategy including navigation, communication campaigns, and pre-effective onboarding.</p>
+      </div>
+    </div>
+
+    <!-- ===== STARTING POINT ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Starting Point</p>
+      <div class="cs-section-rule"></div>
+      <h2>The business case was clear. The experience was not.</h2>
+      <p>The business case was straightforward: increase digital adoption to reduce operational costs — a shift with the potential to save millions in print and mail expenses annually. But when we audited the existing experience, deeper issues emerged.</p>
+      <p>The digital ID card was a rendered SVG template. Members could toggle front and back. That was it. There was no structured metadata, no copy functionality, no wallet integration, no contextual education, and no clear navigation entry point.</p>
+      <p>Analytics confirmed our findings: low traffic, low engagement, minimal repeat usage. The ID card lived inside the Account section, making it nearly impossible to find unless members already knew exactly where to look.</p>
+      <p>The problem was not just usability — it was discoverability, trust, and context.</p>
+    </div>
+
+    <!-- Callout -->
+    <div class="cs-callout">
+      <p>The feature existed. Members simply were not encountering it.</p>
+    </div>
+
+    <!-- ===== REFRAMING ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Reframing</p>
+      <div class="cs-section-rule"></div>
+      <h2>From artifact to moment</h2>
+      <p>Instead of redesigning a card, we reframed the challenge around a single question: <strong>when do people actually need their ID card?</strong></p>
+      <p>We identified six core use cases: checking in at a provider, visiting a pharmacy, sharing information with a dependent, downloading for offline access, adding to a digital wallet, and accessing card information before benefits are effective.</p>
+      <p>This shifted the focus from the artifact to the moment — and unlocked a completely different design direction.</p>
+    </div>
+
+    <!-- ===== RESEARCH ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Research</p>
+      <div class="cs-section-rule"></div>
+      <h2>Three inputs, one direction</h2>
+      <p><strong>Experience Audit:</strong> A full review of web and native flows identified rendering limitations, missing utility features, and IA weaknesses that compounded the discoverability problem.</p>
+      <p><strong>Competitive Research:</strong> We evaluated digital ID implementations across health insurers, financial institutions, rewards ecosystems, and digital wallet integrations. The strongest experiences went beyond replication — they enhanced usability with structured data and wallet-first thinking.</p>
+      <p><strong>Analytics:</strong> Low engagement pointed less to dissatisfaction and more to invisibility. The feature existed. Members simply were not finding it.</p>
+    </div>
+
+    <!-- ===== DESIGN ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Design</p>
+      <div class="cs-section-rule"></div>
+      <h2>Five decisions that changed the experience</h2>
+
+      <div class="cs-principles">
+
+        <div class="cs-principle-row">
+          <div class="cs-principle-num">01</div>
+          <div>
+            <h3>Restore visual trust</h3>
+            <p>Replaced the rendered SVG with actual card images — front and back. Visual parity with the physical card reinforced recognition and trust immediately.</p>
+            <div class="phase-pills" style="margin-top:16px;">
+              <span class="phase-pill">Visual Design</span>
+              <span class="phase-pill">Brand Alignment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-principle-row">
+          <div class="cs-principle-num">02</div>
+          <div>
+            <h3>Add structured, actionable content</h3>
+            <p>Introduced copyable member ID and group numbers, dependent listings, key contact information, and structured plan details. Members no longer needed to zoom or screenshot.</p>
+            <div class="phase-pills" style="margin-top:16px;">
+              <span class="phase-pill">Information Architecture</span>
+              <span class="phase-pill">Content Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-principle-row">
+          <div class="cs-principle-num">03</div>
+          <div>
+            <h3>Apple Wallet &amp; Google Wallet integration</h3>
+            <p>Turned the ID card from a page into a portable asset. Wallet integration aligned with modern digital behaviors and competitive expectations — the card went where members actually needed it.</p>
+            <div class="phase-pills" style="margin-top:16px;">
+              <span class="phase-pill">Native Integration</span>
+              <span class="phase-pill">Interaction Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-principle-row">
+          <div class="cs-principle-num">04</div>
+          <div>
+            <h3>Share &amp; download</h3>
+            <p>A streamlined share function enabled download, email or message sharing, and offline storage — supporting real-world access at the pharmacy counter or provider check-in.</p>
+            <div class="phase-pills" style="margin-top:16px;">
+              <span class="phase-pill">Use Case Design</span>
+              <span class="phase-pill">Mobile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-principle-row">
+          <div class="cs-principle-num">05</div>
+          <div>
+            <h3>Primary navigation entry point</h3>
+            <p>Added a dedicated ID card icon to primary navigation. Post-release, the majority of traffic shifted immediately to this new entry point. Discoverability was the unlock.</p>
+            <div class="phase-pills" style="margin-top:16px;">
+              <span class="phase-pill">IA</span>
+              <span class="phase-pill">Navigation Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Callout -->
+    <div class="cs-callout">
+      <p>Digitizing a physical artifact is not transformation. Designing for real-world behavior is.</p>
+    </div>
+
+    <!-- ===== ADOPTION STRATEGY ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Adoption Strategy</p>
+      <div class="cs-section-rule"></div>
+      <h2>Beyond launch</h2>
+      <p>We paired the product redesign with a digital communication campaign, onboarding education, and a pre-effective welcome experience that allowed members to access their ID card before coverage even began. The goal was not just to ship a feature — it was to shift behavior.</p>
+    </div>
+
+    <!-- ===== OUTCOMES ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Outcomes</p>
+      <div class="cs-section-rule"></div>
+      <h2>From overlooked to essential</h2>
+      <div class="cs-stats-grid">
+        <div class="cs-stat-card">
+          <div class="cs-stat-num" style="display:flex;align-items:center;justify-content:center;gap:8px;">
+            <i class="ph ph-arrow-up" style="font-size:1.8rem;"></i> traffic
+          </div>
+          <div class="cs-stat-label">Via New Primary Nav Entry Point</div>
+        </div>
+        <div class="cs-stat-card">
+          <div class="cs-stat-num">Wallet</div>
+          <div class="cs-stat-label">Strong Add to Wallet &amp; Share Adoption</div>
+        </div>
+        <div class="cs-stat-card">
+          <div class="cs-stat-num">System</div>
+          <div class="cs-stat-label">Scalable Identity Foundation Org-Wide</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SCALING ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Scaling</p>
+      <div class="cs-section-rule"></div>
+      <h2>From feature to framework</h2>
+      <p>The impact extended beyond a single product surface. Our team is now leveraging the research findings, analytics insights, and interaction patterns from this work to align ID card experiences across the organization — standardizing interaction models, creating reusable design components, aligning wallet integration approaches, and establishing scalable content structures.</p>
+      <p>Instead of fragmented implementations across lines of business, we are building a unified identity framework. The work evolved from feature redesign to systems-level thinking.</p>
+    </div>
+
+    <!-- ===== REFLECTION ===== -->
+    <div class="cs-section">
+      <p class="cs-section-label">Reflection</p>
+      <div class="cs-section-rule"></div>
+      <h2>What this work reinforced</h2>
+      <p>This project reinforced a core principle: digitizing a physical artifact is not transformation — designing for real-world behavior is.</p>
+      <p>By shifting from a static SVG to a discoverable, functional, wallet-integrated experience, and by laying the foundation for organizational alignment, what began as a cost-saving initiative became a product maturity milestone.</p>
+    </div>
+
+  </main>
+
+  <!-- ===== NEXT PROJECT ===== -->
+  <div class="cs-next-project">
+    <div>
+      <p class="cs-next-label">Next Project</p>
+      <p class="cs-next-title">Check Coverage →</p>
+    </div>
+    <a href="check-coverage.html" class="btn btn-outline">View case study</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Erin Mahon</div>
+        <div class="footer-brand-sub">Product Designer</div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="https://substack.com/@erinmahon1" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>Charleston, SC</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:emahonux@gmail.com" style="color:var(--pink-text);">emahonux@gmail.com</a>
+        <a href="tel:2034820166">(203) 482-0166</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Erin Mahon. All rights reserved.</p>
+      <p>Product Designer · Charleston, SC</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('vis'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
